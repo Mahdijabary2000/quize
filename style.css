@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    /* background-color: #efefef; */
+    background: linear-gradient(90deg,#654ea3,#eaafc8);
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-bottom: 100px;
+    color:aquamarine;
+    font-size:35px;
+}
+.text-quizz{
+    margin-bottom: 60px;
+    color: #00dbde;
+    font-size: 20px;
+    text-align: justify;
+   
+
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.quizz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quizz{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.quizz-item{
+    
+    color: #fc00ff;
+    width: 100%;
+    cursor: pointer;
+    border: 4px solid #7303c0;
+    background-color: #fdeff9;
+    width: 350px;
+    height: 70px;
+    display: flex;
+    flex-direction: row; 
+     align-items: center;
+    justify-content: center;
+    animation-name:bounceIn ;
+    animation-duration: 1s;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+    .circle{
+    margin-top: 90px;
+    display: flex;
+    gap: 1rem;
+
+    }
+.circle-item{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00dbde;
+    border-radius: 100%;
+}
+@media screen and (min-width:1024px){
+    .quizz{
+    flex-direction: row;
+    justify-content: center;
+    }
+    .quizz-item{
+        color: #fc00ff;
+        cursor: pointer;
+        border: 4px solid #7303c0;
+        background-color: #fdeff9;
+        width: 450px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name:bounceIn ;
+        animation-duration: 1s;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+
+}
